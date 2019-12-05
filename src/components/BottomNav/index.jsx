@@ -15,7 +15,7 @@ class BottomNav extends Component {
             secondary
             key="about"
             iconClassName="fa fa-search"
-            href=""
+            href="/"
           >
             <p>모델 검색</p>
           </Button>
