@@ -1,21 +1,12 @@
 import React, { Component } from "react";
 import Helmet from "react-helmet";
-import { randomImage } from "utils/random";
+// import { randomImage } from "utils/random";
 
-import {
-  Avatar,
-  Subheader,
-  Card,
-  CardTitle,
-  CardText,
-  Divider,
-  List,
-  ListItem
-} from "react-md";
+import { Avatar, Card, CardTitle, CardText } from "react-md";
 import Layout from "../layout";
 import config from "../../data/SiteConfig";
 const style = { Width: 900 };
-const avatar = randomImage();
+// const avatar = randomImage();
 class Place extends Component {
   render() {
     return (
@@ -28,11 +19,11 @@ class Place extends Component {
           <div className="about-container md-grid mobile-fix">
             <Card className="md-grid md-cell--8">
               <div className="about-wrapper">
-                <CardTitle
+                {/* <CardTitle
                   title="Card Title"
                   subtitle="Card Subtitle"
                   avatar={<Avatar src={avatar} role="presentation" />}
-                />
+                /> */}
                 <CardText>
                   <div className="md-grid">
                     <Card
@@ -40,6 +31,7 @@ class Place extends Component {
                       className="md-cell md-paper md-paper--1"
                     >
                       <CardTitle title="이모티콘 메이커스페이스" />
+                      <img src="http://upload.wikimedia.org/wikipedia/en/f/f7/The_Phone_%28film%29_poster.jpeg" />
                       <CardText>
                         <p>교육 필수,무료 </p>
                         <p>동작구 </p>
@@ -61,19 +53,29 @@ class Place extends Component {
                   </div>
 
                   <div className="md-grid">
-                    <List className="md-cell md-paper md-paper--1">
-                      <Subheader red primaryText="디지털 대장간" />
-                      <ListItem primaryText="교육 필수 , 무료" />
-                      <ListItem primaryText="용산구" />
-                    </List>
+                    <Card
+                      style={style}
+                      className="md-cell md-paper md-paper--1"
+                    >
+                      <CardTitle title="디지털 대장간" />
+                      <CardText>
+                        <p>교육 필수, 무료 </p>
+                        <p>용산구 </p>
+                      </CardText>
+                    </Card>
                   </div>
 
                   <div className="md-grid">
-                    <List className="md-cell md-paper md-paper--1">
-                      <Subheader red primaryText="팹랩 서울" />
-                      <ListItem primaryText="교육 필수, 유료" />
-                      <ListItem primaryText="종로구" />
-                    </List>
+                    <Card
+                      style={style}
+                      className="md-cell md-paper md-paper--1"
+                    >
+                      <CardTitle title="팹랩 서울" />
+                      <CardText>
+                        <p>교육 필수, 유료 </p>
+                        <p>종로구 </p>
+                      </CardText>
+                    </Card>
                   </div>
                 </CardText>
               </div>
