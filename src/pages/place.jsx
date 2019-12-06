@@ -45,6 +45,12 @@ class Place extends Component {
                       className="md-cell md-paper md-paper--1"
                     >
                       <CardTitle title="중앙대 메이커스페이스" />
+                      <img
+                        src="logos/mainicon_256x256.png"
+                        className="about-img"
+                        alt={config.userName}
+                      />
+
                       <CardText>
                         <p>교육 필수 ,학생 및 교직원만 가능, 무료 </p>
                         <p>동작구 </p>
